@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Restaurants from '../restaurants/Restaurants.js';
 
 class Review extends Component {
 
@@ -10,7 +11,7 @@ class Review extends Component {
         <li>
           {review.text}
         </li>
-        <button> X </button>
+        <button onClick={() => this.props.delete(this.props.review.id )}> Delete Review </button>
       </div>
     );
   }

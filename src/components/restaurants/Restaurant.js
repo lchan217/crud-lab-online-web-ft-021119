@@ -10,7 +10,7 @@ class Restaurant extends Component {
     return (
       <div>
         <li>
-          {this.props.restaurant.text}
+          {restaurant.text}
           <button onClick={() => this.props.delete(this.props.restaurant.id )}> Delete Restaurant </button>
           <ReviewsContainer restaurant={restaurant}/>
         </li>
